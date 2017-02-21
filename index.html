@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+    
+<Head>
+    <style>
+    
+        #yellowbtn {
+  background-color: yellow;
+  border: solid 3px black;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+            
+    
+    </style>
+    
+<Title>Javascript Site</Title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+</Head>
+<body>
+    
+    <center><p id="text">Welcome to My Site</p></center>
+<br>
+
+    <center><button id="mybtn">Change Text </button></center>
+
+    
+<p id="secondpar"> Javascript is .... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus aliquet erat quis interdum. Phasellus nec justo in neque tempor congue. Vivamus accumsan libero mi, ut bibendum tortor laoreet in. Phasellus a dui ac dui viverra viverra. Nam euismod justo nec diam sodales fringilla. Quisque viverra accumsan eleifend  .... </p>
+    
+    <center><button id="secondbtn"> Append Text</button></center>
+    
+<p id="moretext"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus feugiat metus, eget auctor libero vehicula eget. Sed dolor diam, aliquet nec molestie consectetur, pulvinar eget massa. Nunc at elit feugiat, finibus mi ac, rutrum enim. Donec luctus eros nec tortor tempor, accumsan aliquet metus tincidunt</p>
+    
+    
+    
+    <center><div id="yellowbtn"> </div></center>
+    <br>
+    
+    <center><button id="mybbtn" onclick="otherfunction()">BUTTON</button></center>
+    
+    
+    <center><div><svg id="circle2" height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+        </svg> </div></center>
+    
+   <center><p id="para"> You clicked on the blue circle!</p>
+       <button id="mybtn1" onclick="myfunction()"> BUTTON2</button></center>
+    
+    
+      <center><div><svg id="circle3" height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" />
+          </svg> </div></center>
+    
+    <center><button id="mybtn2" onclick="mefunction()"> BUTTON3</button></center>
+    
+    <!------- This the Roberts Game below  ----->
+    
+    
+    <center><p> How many fingers am I holding up?</p>
+        <p> <input type="text" id="guess"><button id="checkguess">Guess!</button></p></center>
+    
+    
+    
+   <!------- Below is your javascript and above is your HTML ^---------->
+    
+<script type="text/javascript">
+    
+
+document.getElementById("mybtn").onclick=function()
+
+{document.getElementById("text").innerHTML ="Hi My Name Is Priscia!";
+    
+ document.getElementById("secondbtn").innerHTML ="I Think " + document.getElementById("secondpar").innerHTML + "Awesome";
+    
+}
+</script>
+          
+<script type="text/javascript">
+
+    
+    
+//This is the First button making the yellow circle turn red using Javascript in addition this was not a svg circle code//
+    
+document.getElementById("mybbtn").onclick=function(){
+    document.getElementById("yellowbtn").style.backgroundColor="red";
+    }
+    
+// This is the second button2 changing word color to Blue using Javascript//
+    
+function myfunction(){
+    document.getElementById("para").style.color ="blue"
+}
+      
+//This is the Third button3 making the green button dissapear using Javascript in addition the circle is a svg circle//
+    
+function mefunction(){
+    document.getElementById("circle3").style.visibility="hidden";
+    alert("Green Button Will Dissapear after you click Ok!")
+                }
+
+</script>
+<script>
+    
+    document.getElementById("checkguess").onclick= function(){
+        var randomNumber=Math.random();
+        randomNumbe = randomNumber * 6;
+        randomNumber = Math.floor(randomNumber);
+        if(document.getElementById("guess").value==randomNumber){
+            alert("well done! You got it");
+        } else{
+            alert("nope! The number was"+ randomNumber);
+        }
+    }
+</script>
+</body>
+</html>

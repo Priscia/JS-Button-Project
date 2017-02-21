@@ -1,0 +1,65 @@
+<!DOCTYPE HTML!>
+<html lang="en">
+<meta chartset="utf-8">
+<head> 
+<!-------Latest Bootstrap compiled NOT using CDN but HTTPS rel Link---------->  
+    
+            <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <title> Javascript Buttons</title>
+   
+    
+  <!-------Below is your CSS Body style for your JS Button Project ---------->      
+<style>
+    
+body {
+    margin-top: 60px;
+    color:#42bcf4;
+}
+</style>
+    
+</head>
+<body>
+<!----- Below is your bootstrap customized template with container for the JS button Project----->
+    
+    <div class="container"></div>
+    <div class="jumbotron"></div>
+    <div class="row"></div>
+    <div class="col-xs-12"></div>
+    <h1 class="text-center">JS BUTTONS PROJECT</h1>
+<hr>
+            <!-------Below is your button styles and id---------->  
+    
+<center><p id="para"> This sentence will eventually turn green once you click the "Success" Button.</p></center>
+            
+ <center><div class="container">
+   <hr>
+<button id="blueb" type="button" class="btn btn-lg btn-primary">Primary</button>
+     
+<button id="greenb" type="button" class="btn btn-lg btn-success">Success</button>
+     
+<button id="yellowb" type="button" class="btn btn-lg btn-warning">Warning</button>
+     </div></center>
+    
+    
+ <!------- Below is your javascript and above is your HTML ^---------->    
+            
+<script type="text/javascript">
+    
+document.getElementById("blueb").onclick=function(){
+    document.getElementById("blueb").style.backgroundColor="#ef4b45";
+    }
+    
+document.getElementById("greenb").onclick=function(){
+    document.getElementById("para").style.color="#63d134";
+    }
+
+document.getElementById("yellowb").onclick=function(){
+    document.getElementById("yellowb").style.visibility="hidden";
+}
+
+    </script>
+
+</body>
+</html>
