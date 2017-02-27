@@ -1,3 +1,5 @@
+<script type="text/javascript">
+
 document.getElementById("mybtn").onclick=function()
 {document.getElementById("text").innerHTML ="Hi My Name Is Priscia!";
     
