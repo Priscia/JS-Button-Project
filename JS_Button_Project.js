@@ -37,3 +37,4 @@ function mefunction(){
         }
     }
 </script>
+// This is the Javascript for the Index.html page//
