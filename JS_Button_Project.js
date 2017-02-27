@@ -37,4 +37,19 @@ function mefunction(){
         }
     }
 </script>
-// This is the Javascript for the Index.html page//
+// Above is the Javascript for the Index.html page//
+
+<script type="text/javascript">
+    
+document.getElementById("blueb").onclick=function(){
+    document.getElementById("blueb").style.backgroundColor="#ef4b45";
+    }
+    
+document.getElementById("greenb").onclick=function(){
+    document.getElementById("para").style.color="#63d134";
+    }
+document.getElementById("yellowb").onclick=function(){
+    document.getElementById("yellowb").style.visibility="hidden";
+}
+    </script>
+/*Above is the Javascript for the index2.html page*/
