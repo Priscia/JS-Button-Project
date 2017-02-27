@@ -7,4 +7,6 @@ The Index.html is just a plain html page and the Index2.html has Bootstrap compi
 
 If you want to see the ending product to this project here is the link to my codepen ... https://codepen.io/PK_123/pen/apgLmE
 
+*Also I had such fun time with this project and added a little bit of Snow which you will see in the codepen.*
+
 In addition best practice is to create separate CSS and Javascript pages to Link them to main index.html page or .html page you are working on.
