@@ -36,3 +36,4 @@ function mefunction(){
             alert("nope! The number was"+ randomNumber);
         }
     }
+</script>
